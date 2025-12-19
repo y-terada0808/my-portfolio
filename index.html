@@ -1,252 +1,371 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ポートフォリオサイト - 自己紹介と作品集">
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI×Web開発のプロフェッショナルパートナー。戦略立案からPoC、開発・運用までを一気通貫で支援します。">
+  <title>AIX Web Solutions | AI×Web開発パートナー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            primary: '#7C3AED',
+            accent: '#22D3EE',
+            surface: '#0B1224'
+          },
+          boxShadow: {
+            card: '0 20px 60px rgba(0,0,0,0.35)'
+          }
+        }
+      }
+    };
+  </script>
 </head>
-<body>
-    <!-- ナビゲーション -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">My Portfolio</div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(124,58,237,0.25),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(34,211,238,0.18),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(59,130,246,0.12),transparent_35%)]"></div>
+
+    <header class="relative z-10 border-b border-white/5 bg-slate-950/70 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/20 text-xl font-extrabold text-accent">
+            A
+          </div>
+          <div>
+            <p class="text-sm uppercase tracking-[0.25em] text-slate-400">AI × Web</p>
+            <p class="text-lg font-semibold text-white">AIX Web Solutions</p>
+          </div>
+        </div>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+          <a href="#services" class="hover:text-white">サービス</a>
+          <a href="#process" class="hover:text-white">進め方</a>
+          <a href="#cases" class="hover:text-white">実績</a>
+          <a href="#contact" class="hover:text-white">お問い合わせ</a>
+        </nav>
+        <a href="#contact" class="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/40 transition hover:translate-y-[-1px] hover:shadow-primary/60 md:inline-flex">
+          相談する
+        </a>
+      </div>
+    </header>
+
+    <main class="relative z-10">
+      <section class="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-20">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-accent ring-1 ring-white/10">
+              AIとWebで事業成長をドライブ
+            </div>
+            <h1 class="text-4xl font-bold leading-tight text-white md:text-5xl">
+              戦略立案から実装・運用まで<br>
+              <span class="text-primary">AI × Web開発</span>の伴走パートナー
+            </h1>
+            <p class="text-lg text-slate-300">
+              ビジネス要件整理・PoCから、プロダクションレベルのWebアプリ・生成AIプロダクト開発、MLOpsまで一気通貫で提供。高速な実装と安定運用で、成果に直結するアウトプットを届けます。
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/40 transition hover:translate-y-[-2px] hover:shadow-primary/60">
+                無料相談を予約
+              </a>
+              <a href="#services" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/5">
+                サービスを見る
+              </a>
+            </div>
+            <div class="grid grid-cols-3 gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200">
+              <div>
+                <p class="text-2xl font-bold text-white">120+</p>
+                <p class="text-xs text-slate-400">納品・ローンチ</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-white">98%</p>
+                <p class="text-xs text-slate-400">納期遵守率</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-white">24/7</p>
+                <p class="text-xs text-slate-400">運用サポート</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute inset-0 -skew-y-3 rounded-3xl bg-gradient-to-br from-primary/40 via-accent/30 to-blue-500/25 blur-3xl"></div>
+            <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70 shadow-card">
+              <div class="border-b border-white/5 px-6 py-4 flex items-center justify-between">
+                <p class="text-sm font-semibold text-white">AI Ops Dashboard</p>
+                <span class="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-200">Real-time</span>
+              </div>
+              <div class="p-6 space-y-6">
+                <div class="grid grid-cols-3 gap-4 text-sm text-slate-200">
+                  <div class="rounded-2xl bg-white/5 p-4">
+                    <p class="text-slate-400">推論レイテンシ</p>
+                    <p class="mt-2 text-2xl font-semibold text-white">68 ms</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/5 p-4">
+                    <p class="text-slate-400">デプロイ/週</p>
+                    <p class="mt-2 text-2xl font-semibold text-white">14</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/5 p-4">
+                    <p class="text-slate-400">品質指標</p>
+                    <p class="mt-2 text-2xl font-semibold text-white">99.3%</p>
+                  </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-r from-primary/20 via-indigo-600/10 to-accent/20 p-4">
+                  <p class="text-sm text-slate-200">LLMガードレール検知</p>
+                  <p class="mt-2 text-xs text-slate-400">セーフティ / 不適切 / プライバシー / 利用規約</p>
+                  <div class="mt-4 grid grid-cols-4 gap-3 text-center text-xs text-slate-200">
+                    <div class="rounded-xl bg-white/10 px-3 py-2">
+                      <p class="text-slate-400">安全</p>
+                      <p class="text-lg font-semibold text-emerald-300">92%</p>
+                    </div>
+                    <div class="rounded-xl bg-white/10 px-3 py-2">
+                      <p class="text-slate-400">不適切</p>
+                      <p class="text-lg font-semibold text-amber-300">5%</p>
+                    </div>
+                    <div class="rounded-xl bg-white/10 px-3 py-2">
+                      <p class="text-slate-400">機密</p>
+                      <p class="text-lg font-semibold text-rose-300">2%</p>
+                    </div>
+                    <div class="rounded-xl bg-white/10 px-3 py-2">
+                      <p class="text-slate-400">規約</p>
+                      <p class="text-lg font-semibold text-blue-300">1%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="flex flex-wrap items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-xs text-slate-300">
+          <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-accent">Trusted by teams</span>
+          <div class="flex flex-wrap gap-4">
+            <span class="rounded-full bg-white/5 px-3 py-1 text-sm text-white">B2B SaaS</span>
+            <span class="rounded-full bg-white/5 px-3 py-1 text-sm text-white">FinTech</span>
+            <span class="rounded-full bg-white/5 px-3 py-1 text-sm text-white">E-commerce</span>
+            <span class="rounded-full bg-white/5 px-3 py-1 text-sm text-white">Healthcare</span>
+            <span class="rounded-full bg-white/5 px-3 py-1 text-sm text-white">EdTech</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="flex items-center justify-between gap-4 pb-8">
+          <div>
+            <p class="text-sm uppercase tracking-[0.2em] text-accent">Services</p>
+            <h2 class="mt-2 text-3xl font-bold text-white">AIとWebの掛け算で成果を出す</h2>
+          </div>
+          <a href="#contact" class="hidden rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/5 md:inline-flex">
+            相談する
+          </a>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-card">
+            <p class="text-sm font-semibold text-accent">Strategy & PoC</p>
+            <h3 class="text-xl font-bold text-white">AI導入戦略とPoC設計</h3>
+            <p class="text-sm text-slate-300">課題定義からモデル選定・ガバナンス設計までを短期で実行し、ROIの見えるPoCを設計。</p>
+            <ul class="text-sm text-slate-200 space-y-2">
+              <li>・ビジネス要件整理 / UX設計</li>
+              <li>・LLM / ベクター検索 / RAG設計</li>
+              <li>・評価指標設計とリスク評価</li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </div>
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-card">
+            <p class="text-sm font-semibold text-accent">Build & Launch</p>
+            <h3 class="text-xl font-bold text-white">AI×Webアプリ開発</h3>
+            <p class="text-sm text-slate-300">SaaS / 管理画面 / 顧客向けサービスを、モダンスタックで高速に実装し安定稼働させます。</p>
+            <ul class="text-sm text-slate-200 space-y-2">
+              <li>・Next.js / React / TypeScript</li>
+              <li>・LLM統合 (OpenAI, Claude 等)</li>
+              <li>・API/DB設計, 認証, 決済</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-card">
+            <p class="text-sm font-semibold text-accent">MLOps & Growth</p>
+            <h3 class="text-xl font-bold text-white">運用・改善とMLOps基盤</h3>
+            <p class="text-sm text-slate-300">監視・ABテスト・フィードバックループを構築し、継続的な性能改善と安定運用を実現。</p>
+            <ul class="text-sm text-slate-200 space-y-2">
+              <li>・評価/監視 (品質, コスト, レイテンシ)</li>
+              <li>・CI/CD / IaC / セキュリティ強化</li>
+              <li>・グロース実験と運用型改善</li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </section>
 
-    <!-- ヒーローセクション -->
-    <section id="hero" class="hero">
-        <div class="hero-background">
-            <div class="hero-grid"></div>
-            <div class="hero-particles">
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-            </div>
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+      <section id="process" class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="flex flex-col gap-4 pb-8 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.2em] text-accent">Process</p>
+            <h2 class="mt-2 text-3xl font-bold text-white">シンプルで透明性のある進め方</h2>
+          </div>
+          <p class="max-w-xl text-sm text-slate-300">2週間単位のスプリントで要件を磨き込み、毎週デモとリリースを積み重ねます。</p>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-text">Portfolio 2024</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">こんにちは、</span>
-                    <span class="title-main highlight">saku</span>
-                    <span class="title-line">です</span>
-                </h1>
-                <div class="hero-subtitle-wrapper">
-                    <p class="hero-subtitle">
-                        <span class="subtitle-accent">Web開発者</span>
-                        <span class="subtitle-divider">/</span>
-                        <span class="subtitle-accent">デザイナー</span>
-                    </p>
-                </div>
-                <p class="hero-description">クリエイティブなソリューションで、ユーザー体験を向上させることに情熱を注いでいます。</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>作品を見る</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>お問い合わせ</span>
-                    </a>
-                </div>
-                <div class="hero-scroll-indicator">
-                    <div class="scroll-line"></div>
-                    <span class="scroll-text">Scroll</span>
-                </div>
-            </div>
-            <div class="hero-social">
-                <a href="https://instagram.com/yourusername" target="_blank" class="social-link" aria-label="Instagram">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
-                    </svg>
-                </a>
-                <a href="https://youtube.com/@yourusername" target="_blank" class="social-link" aria-label="YouTube">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="currentColor"/>
-                    </svg>
-                </a>
-                <a href="https://twitter.com/yourusername" target="_blank" class="social-link" aria-label="Twitter">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="currentColor"/>
-                    </svg>
-                </a>
-            </div>
+        <div class="grid gap-4 md:grid-cols-4">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-accent">01</p>
+            <h3 class="mt-2 text-lg font-bold text-white">Discovery</h3>
+            <p class="mt-2 text-sm text-slate-300">課題・KPIの定義、リスクと制約整理、ロードマップ策定。</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-accent">02</p>
+            <h3 class="mt-2 text-lg font-bold text-white">Design</h3>
+            <p class="mt-2 text-sm text-slate-300">情報設計、プロトタイプ、評価指標の決定、ガードレール設計。</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-accent">03</p>
+            <h3 class="mt-2 text-lg font-bold text-white">Build</h3>
+            <p class="mt-2 text-sm text-slate-300">実装・結合テスト・自動化。毎週デモとリリースで進捗を可視化。</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-accent">04</p>
+            <h3 class="mt-2 text-lg font-bold text-white">Operate</h3>
+            <p class="mt-2 text-sm text-slate-300">監視・改善サイクル、ABテスト、セキュリティ/コスト最適化。</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About セクション -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        はじめまして。Web開発とデザインに興味を持つエンジニアです。
-                        ユーザー中心のデザインと、クリーンで保守しやすいコードを心がけています。
-                    </p>
-                    <p>
-                        新しい技術を学ぶことが好きで、常に最新のトレンドを追いかけています。
-                        チームでの協働を大切にし、プロジェクトの成功に向けて尽力します。
-                    </p>
-                </div>
-            </div>
+      <section id="cases" class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="flex items-center justify-between pb-8">
+          <div>
+            <p class="text-sm uppercase tracking-[0.2em] text-accent">Case Studies</p>
+            <h2 class="mt-2 text-3xl font-bold text-white">成果にこだわった実績</h2>
+          </div>
+          <span class="hidden rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-semibold text-emerald-200 md:block">NDA配慮の一部抜粋</span>
         </div>
-    </section>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-5 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">生成AIチャット × B2B SaaS</p>
+            <h3 class="text-xl font-bold text-white">問い合わせ自動化でCX向上</h3>
+            <p class="text-sm text-slate-300">RAGとファインチューニングを組み合わせ、サポート回答時間を83%短縮。運用コストを月120時間削減。</p>
+            <ul class="text-sm text-slate-200 space-y-1">
+              <li>・品質指標: 正答率 +24pt / ハルシネーション率 -68%</li>
+              <li>・監視: OpenTelemetry + ガードレール検知</li>
+              <li>・Stack: Next.js, LangChain, Supabase, Vercel</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-5 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">AIレコメンド × EC</p>
+            <h3 class="text-xl font-bold text-white">パーソナライズでCVR 1.6倍</h3>
+            <p class="text-sm text-slate-300">行動ログとカタログデータを統合し、リアルタイム推薦を実装。A/BテストでCVR向上と在庫回転率改善。</p>
+            <ul class="text-sm text-slate-200 space-y-1">
+              <li>・レイテンシ: P95 120ms</li>
+              <li>・デプロイ頻度: 週2→週14に向上</li>
+              <li>・Stack: Next.js, FastAPI, Redis, BigQuery</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-5 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">業務自動化 × 管理画面</p>
+            <h3 class="text-xl font-bold text-white">バックオフィスをフル自動化</h3>
+            <p class="text-sm text-slate-300">請求・検収フローをAIで自動化し、月600件の手作業を排除。監査ログと権限管理でコンプラ対応。</p>
+            <ul class="text-sm text-slate-200 space-y-1">
+              <li>・人的ミス: -92%</li>
+              <li>・リードタイム: 5日→1日に短縮</li>
+              <li>・Stack: React, NestJS, PostgreSQL, Keycloak</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <!-- Skills セクション -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>Backend</h3>
-                    <p>Node.js, Python, Database</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>Design</h3>
-                    <p>UI/UX Design, Figma</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Tools</h3>
-                    <p>Git, VS Code, Docker</p>
-                </div>
+      <section class="mx-auto max-w-6xl px-6 pb-16">
+        <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-primary/25 via-slate-900 to-accent/20 p-8 shadow-card md:p-10">
+          <div class="grid gap-8 md:grid-cols-2 md:items-center">
+            <div class="space-y-4">
+              <p class="text-sm uppercase tracking-[0.2em] text-accent">Engagement</p>
+              <h3 class="text-3xl font-bold text-white">柔軟な契約形態で伴走</h3>
+              <p class="text-sm text-slate-200">スモールスタートから本格開発まで、チーム体制とスコープに合わせて最適なプランを提案します。</p>
+              <ul class="space-y-2 text-sm text-slate-100">
+                <li>・スプリント単位のAgile開発</li>
+                <li>・要件定義/PoCの固定価格パッケージ</li>
+                <li>・運用・改善フェーズの月額支援</li>
+              </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects セクション -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト画像</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>プロジェクト名 1</h3>
-                        <p>プロジェクトの説明がここに入ります。使用した技術や特徴を記載してください。</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">詳細を見る →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト画像</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>プロジェクト名 2</h3>
-                        <p>プロジェクトの説明がここに入ります。使用した技術や特徴を記載してください。</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <a href="#" class="project-link">詳細を見る →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト画像</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>プロジェクト名 3</h3>
-                        <p>プロジェクトの説明がここに入ります。使用した技術や特徴を記載してください。</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
-                        </div>
-                        <a href="#" class="project-link">詳細を見る →</a>
-                    </div>
-                </div>
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4">
+                <p class="text-sm font-semibold text-accent">Starter</p>
+                <p class="text-2xl font-bold text-white">2〜4週</p>
+                <p class="text-xs text-slate-300">要件整理 / PoC / プロトタイプ</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4">
+                <p class="text-sm font-semibold text-accent">Build</p>
+                <p class="text-2xl font-bold text-white">6〜12週</p>
+                <p class="text-xs text-slate-300">本実装 / QA / セキュリティ</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4">
+                <p class="text-sm font-semibold text-accent">Operate</p>
+                <p class="text-2xl font-bold text-white">月額</p>
+                <p class="text-xs text-slate-300">SLO監視 / ABテスト / 改善</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4">
+                <p class="text-sm font-semibold text-accent">Support</p>
+                <p class="text-2xl font-bold text-white">24/7</p>
+                <p class="text-xs text-slate-300">障害対応 / 運用手順化</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact セクション -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <p class="contact-description">
-                    お仕事のご依頼やご質問がございましたら、お気軽にお問い合わせください。
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-link">
-                        <span class="contact-icon">📧</span>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://github.com/yourusername" target="_blank" class="contact-link">
-                        <span class="contact-icon">💻</span>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://instagram.com/yourusername" target="_blank" class="contact-link">
-                        <span class="contact-icon">📷</span>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://youtube.com/@yourusername" target="_blank" class="contact-link">
-                        <span class="contact-icon">▶️</span>
-                        <span>YouTube</span>
-                    </a>
-                    <a href="https://twitter.com/yourusername" target="_blank" class="contact-link">
-                        <span class="contact-icon">🐦</span>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
-                        <span class="contact-icon">💼</span>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
+      <section id="contact" class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-card md:p-10">
+          <div class="grid gap-6 md:grid-cols-3 md:items-center">
+            <div class="md:col-span-2 space-y-3">
+              <p class="text-sm uppercase tracking-[0.2em] text-accent">Contact</p>
+              <h3 class="text-3xl font-bold text-white">まずは課題をお聞かせください</h3>
+              <p class="text-sm text-slate-200">2営業日以内にシニアエンジニアが返信します。機密情報は不要ですので、気軽にご相談ください。</p>
+              <div class="flex flex-wrap gap-3 text-sm text-slate-100">
+                <span class="rounded-full bg-white/10 px-3 py-1">要件整理 / 見積もり</span>
+                <span class="rounded-full bg-white/10 px-3 py-1">PoC相談</span>
+                <span class="rounded-full bg-white/10 px-3 py-1">既存プロジェクトの救済</span>
+              </div>
             </div>
+            <div class="space-y-3">
+              <a href="mailto:contact@example.com" class="flex items-center justify-between rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-accent">Email</p>
+                  <p>contact@example.com</p>
+                </div>
+                <span>→</span>
+              </a>
+              <a href="tel:+81-90-1234-5678" class="flex items-center justify-between rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-accent">Phone</p>
+                  <p>+81-90-1234-5678</p>
+                </div>
+                <span>→</span>
+              </a>
+              <a href="https://cal.com" target="_blank" class="flex items-center justify-between rounded-2xl border border-white/15 bg-primary px-4 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] hover:shadow-lg hover:shadow-primary/40">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-white/70">Meeting</p>
+                  <p>30分のオンライン相談を予約</p>
+                </div>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    <footer class="relative z-10 border-t border-white/5 bg-slate-950/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 py-6 md:flex-row md:items-center">
+        <div>
+          <p class="text-sm font-semibold text-white">AIX Web Solutions</p>
+          <p class="text-xs text-slate-400">AIとWeb開発で事業成長を支えるテックパートナー</p>
         </div>
+        <div class="flex flex-wrap gap-4 text-xs text-slate-300">
+          <span>Privacy</span>
+          <span>Security</span>
+          <span>Service Level</span>
+        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
+  </div>
 </body>
 </html>
 
