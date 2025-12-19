@@ -20,9 +20,21 @@ gh auth login
 
 認証が完了したら、以下のコマンドを実行：
 
+**プライベートリポジトリを作成する場合：**
+```bash
+cd /Users/teradayusaku/Desktop/my-portfolio
+gh repo create my-portfolio --private --source=. --remote=origin --push
+```
+
+**公開リポジトリを作成する場合：**
 ```bash
 cd /Users/teradayusaku/Desktop/my-portfolio
 gh repo create my-portfolio --public --source=. --remote=origin --push
+```
+
+または、スクリプトを実行：
+```bash
+./create-private-repo.sh
 ```
 
 これで、GitHub上にリポジトリが作成され、コードがプッシュされます。
@@ -37,7 +49,7 @@ gh repo create my-portfolio --public --source=. --remote=origin --push
 2. 右上の「+」ボタンをクリック → 「New repository」を選択
 3. リポジトリ名を入力（例: `my-portfolio`）
 4. 説明を入力（任意）
-5. **Public** または **Private** を選択
+5. **Private** を選択（プライベートリポジトリの場合）
 6. **「Initialize this repository with a README」はチェックしない**（既にREADMEがあるため）
 7. 「Create repository」をクリック
 
