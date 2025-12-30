@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ | 介護・マネジメント・AI推進の専門家</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+    
+    <!-- Decorative SVG Elements -->
+    <svg class="svg-defs" aria-hidden="true">
+        <defs>
+            <linearGradient id="mesh-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+            </linearGradient>
+            <pattern id="geometric-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="20" cy="20" r="1" fill="rgba(102, 126, 234, 0.1)"/>
+            </pattern>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <h1 class="logo">Portfolio</h1>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                    <li><a href="#current" class="nav-link">Current</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-mesh"></div>
+                <div class="hero-particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                <div class="hero-noise"></div>
+            </div>
+            <div class="hero-decorative-shapes">
+                <div class="decorative-shape shape-1"></div>
+                <div class="decorative-shape shape-2"></div>
+                <div class="decorative-shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="char">介</span><span class="char">護</span><span class="char">か</span><span class="char">ら</span><span class="char">A</span><span class="char">I</span><span class="char">ま</span><span class="char">で</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="char">1</span><span class="char">5</span><span class="char">年</span><span class="char">の</span><span class="char">実</span><span class="char">践</span><span class="char">で</span><span class="char">築</span><span class="char">く</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="char">次</span><span class="char">世</span><span class="char">代</span><span class="char">の</span><span class="char">イ</span><span class="char">ノ</span><span class="char">ベ</span><span class="char">ー</span><span class="char">シ</span><span class="char">ョ</span><span class="char">ン</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">現場経験からマネジメント、AI推進まで。医療法人の新規事業立ち上げとDX推進をリードする専門家</p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+                <path d="M0,50 Q300,0 600,50 T1200,50 L1200,100 L0,100 Z" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-background-pattern"></div>
+            <div class="section-geometric-pattern"></div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">About</h2>
+                <div class="about-content fade-in-up">
+                    <div class="about-card glassmorphism">
+                        <p class="about-text">
+                            介護現場からマネジメントまで15年間の豊富な経験を持つ専門家です。
+                            現在は医療法人において、新規事業計画立案から事業遂行までを担当し、
+                            理事長の政策秘書的立場から法人の発展に寄与しています。
+                            また、AI推進の立場から、最新技術を活用した業務改善とイノベーション創出に取り組んでいます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="section-background-pattern"></div>
+            <div class="section-geometric-pattern"></div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Experience</h2>
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Early Career -->
+                    <div class="timeline-item fade-in-left" style="animation-delay: 0.1s">
+                        <div class="timeline-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism">
+                            <div class="timeline-year">初期キャリア</div>
+                            <h3 class="timeline-title">介護現場</h3>
+                            <p class="timeline-description">
+                                介護現場での実践的な経験を積み、利用者様への直接的な支援を通じて、介護の本質を学びました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-left" style="animation-delay: 0.2s">
+                        <div class="timeline-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism">
+                            <div class="timeline-year">相談業務</div>
+                            <h3 class="timeline-title">相談員経験</h3>
+                            <p class="timeline-description">
+                                相談員として、利用者様やご家族からの様々な相談に対応し、適切な支援計画の立案と調整を行いました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-left" style="animation-delay: 0.3s">
+                        <div class="timeline-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism">
+                            <div class="timeline-year">ケアマネジメント</div>
+                            <h3 class="timeline-title">ケアマネ経験</h3>
+                            <p class="timeline-description">
+                                ケアマネジャーとして、利用者様一人ひとりに最適なサービスを提供するため、多職種連携と包括的な支援を実践しました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-left" style="animation-delay: 0.4s">
+                        <div class="timeline-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism">
+                            <div class="timeline-year">包括支援</div>
+                            <h3 class="timeline-title">包括支援センター経験</h3>
+                            <p class="timeline-description">
+                                包括支援センターにおいて、地域包括ケアシステムの構築に貢献し、地域全体の介護支援体制の整備に取り組みました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-left" style="animation-delay: 0.5s">
+                        <div class="timeline-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism">
+                            <div class="timeline-year">マネジメント</div>
+                            <h3 class="timeline-title">センター長</h3>
+                            <p class="timeline-description">
+                                センター長として、組織運営とマネジメントを担当。スタッフの育成、業務改善、サービス品質の向上に取り組みました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Medical Corporation (Last 3 Years) -->
+                    <div class="timeline-item fade-in-left highlight" style="animation-delay: 0.6s">
+                        <div class="timeline-marker highlight-marker">
+                            <div class="timeline-marker-inner"></div>
+                        </div>
+                        <div class="timeline-content glassmorphism highlight-content">
+                            <div class="timeline-year">約3年前〜現在</div>
+                            <h3 class="timeline-title">医療法人での実績</h3>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">📈</span>
+                                    <div class="achievement-text">
+                                        <strong>訪問介護と居宅介護支援事業の業績改善</strong>
+                                        <p>既存事業の効率化と品質向上により、業績を大幅に改善しました。</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🚀</span>
+                                    <div class="achievement-text">
+                                        <strong>訪問看護と居宅介護の立ち上げ</strong>
+                                        <p>新規事業の計画立案から実行までを一貫して担当し、成功に導きました。</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🏢</span>
+                                    <div class="achievement-text">
+                                        <strong>NPOの立ち上げ</strong>
+                                        <p>非営利組織の設立と運営体制の構築をリードしました。</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">💼</span>
+                                    <div class="achievement-text">
+                                        <strong>B型就労継続支援と就労移行支援の立ち上げ</strong>
+                                        <p>障害者就労支援事業の新規開設を成功させました。</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🤖</span>
+                                    <div class="achievement-text">
+                                        <strong>AI推進</strong>
+                                        <p>AI技術を活用した業務改善とイノベーション創出を推進しています。</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item current">
+                                    <span class="achievement-icon">🏥</span>
+                                    <div class="achievement-text">
+                                        <strong>看護多機能型の立ち上げ（進行中）</strong>
+                                        <p>現在、看護多機能型事業の立ち上げを進めています。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualifications Section -->
+        <section id="qualifications" class="section">
+            <div class="section-background-pattern"></div>
+            <div class="section-geometric-pattern"></div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Qualifications</h2>
+                <div class="qualifications-grid">
+                    <div class="qualification-card glassmorphism fade-in-up magnet-effect" style="animation-delay: 0.1s">
+                        <div class="card-glow"></div>
+                        <div class="qualification-icon-wrapper">
+                            <div class="qualification-icon">🏥</div>
+                        </div>
+                        <h3 class="qualification-title">介護・福祉資格</h3>
+                        <ul class="qualification-list">
+                            <li>介護福祉士</li>
+                            <li>社会福祉士</li>
+                            <li>精神保健福祉士</li>
+                            <li>介護支援専門員</li>
+                        </ul>
+                    </div>
+                    <div class="qualification-card glassmorphism fade-in-up magnet-effect" style="animation-delay: 0.2s">
+                        <div class="card-glow"></div>
+                        <div class="qualification-icon-wrapper">
+                            <div class="qualification-icon">💻</div>
+                        </div>
+                        <h3 class="qualification-title">IT・AI資格</h3>
+                        <ul class="qualification-list">
+                            <li>G検定（JDLA Deep Learning for GENERAL）</li>
+                            <li>情報セキュリティマネジメント</li>
+                            <li>LPIC-1（Linux Professional Institute Certification Level 1）</li>
+                            <li>LPIC-2（Linux Professional Institute Certification Level 2）</li>
+                            <li>ITIL（IT Infrastructure Library）</li>
+                        </ul>
+                    </div>
+                    <div class="qualification-card glassmorphism fade-in-up magnet-effect highlight-achievement" style="animation-delay: 0.3s">
+                        <div class="card-glow"></div>
+                        <div class="qualification-icon-wrapper">
+                            <div class="qualification-icon">🏆</div>
+                        </div>
+                        <h3 class="qualification-title">実績・受賞</h3>
+                        <ul class="qualification-list">
+                            <li class="achievement-badge">
+                                <span class="badge-icon">✨</span>
+                                <span class="badge-text">経済産業省 マナビDXクエスト</span>
+                                <span class="badge-year">2年連続完遂</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Work Section -->
+        <section id="current" class="section section-alt">
+            <div class="section-background-pattern"></div>
+            <div class="section-geometric-pattern"></div>
+            <div class="container">
+                <h2 class="section-title fade-in-up">Current Work</h2>
+                <div class="current-content">
+                    <div class="current-item glassmorphism fade-in-up magnet-effect ripple-effect" style="animation-delay: 0.1s">
+                        <div class="card-glow"></div>
+                        <div class="current-item-icon">📊</div>
+                        <h3 class="current-title">新規事業計画立案・事業遂行</h3>
+                        <p class="current-description">
+                            医療法人において、新規事業の計画立案から実行までを一貫して担当。
+                            市場分析、事業計画策定、実行管理まで、事業の全プロセスをリードしています。
+                        </p>
+                    </div>
+                    <div class="current-item glassmorphism fade-in-up magnet-effect ripple-effect" style="animation-delay: 0.2s">
+                        <div class="card-glow"></div>
+                        <div class="current-item-icon">🤖</div>
+                        <h3 class="current-title">AI推進</h3>
+                        <p class="current-description">
+                            AI技術を活用した業務改善とイノベーション創出を推進。
+                            介護・医療分野におけるAI活用の可能性を追求し、実践的な導入を進めています。
+                        </p>
+                    </div>
+                    <div class="current-item glassmorphism fade-in-up magnet-effect ripple-effect" style="animation-delay: 0.3s">
+                        <div class="card-glow"></div>
+                        <div class="current-item-icon">💼</div>
+                        <h3 class="current-title">政策秘書的立場</h3>
+                        <p class="current-description">
+                            理事長の政策秘書的立場から、法人の戦略立案と実行をサポート。
+                            長年の経験と専門知識を活かし、法人の発展に貢献しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
